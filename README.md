@@ -138,10 +138,5 @@ Everything you are likely to change is in [`js/config.js`](js/config.js):
 
 ## 👤 Author
 
-**YOUR NAME** · YOUR COLLEGE / COURSE · YEAR  
-<!-- Replace the line above with your own details before submitting. -->
+Rushabh Patil · SOCET / IT · 2026  
 
-## 📜 License
-
-Code released under the [MIT License](LICENSE). Phaser is © Phaser Studio Inc., also MIT licensed
-(see `lib/PHASER_LICENSE.md`).
