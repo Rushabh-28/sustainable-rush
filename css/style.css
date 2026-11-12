@@ -1,0 +1,70 @@
+/* Sustainable Rush - page styling.
+   The game itself is drawn on a canvas by Phaser; this file only makes the
+   page fill the screen and centres the canvas on any device. */
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: radial-gradient(circle at 50% 20%, #1b6b4a 0%, #0b3d2e 70%);
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: none;
+  font-family: "Trebuchet MS", "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+#game-container {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+}
+
+#game-container canvas {
+  display: block;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.45);
+}
+
+/* shown until the first scene is ready */
+#loading {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #c8e6c9;
+  font-size: 20px;
+  font-weight: bold;
+  z-index: 2;
+  pointer-events: none;
+}
+
+#loading .leaf {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 14px;
+  background: #66bb6a;
+  border-radius: 0 100% 0 100%;
+  animation: spin 1.1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  0%   { transform: rotate(0deg) scale(1); }
+  50%  { transform: rotate(180deg) scale(1.25); }
+  100% { transform: rotate(360deg) scale(1); }
+}
+
+.nojs {
+  position: fixed;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+}

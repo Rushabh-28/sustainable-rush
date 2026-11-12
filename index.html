@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="theme-color" content="#0b3d2e">
+  <meta name="description" content="Sustainable Rush - an eco-friendly match-3 puzzle game. Match trees, water, solar, recycling and wind tiles to save the planet.">
+  <title>Sustainable Rush 2.0 - Eco Match-3 Game</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="game-container">
+    <div id="loading">
+      <div class="leaf"></div>
+      <p>Loading Sustainable Rush...</p>
+    </div>
+  </div>
+  <noscript><p class="nojs">Sustainable Rush needs JavaScript. Please enable it and reload.</p></noscript>
+
+  <!-- Phaser game engine (bundled locally, so the game also works offline) -->
+  <script src="lib/phaser.min.js"></script>
+
+  <!-- Game code (order matters: shared data first, scenes last) -->
+  <script src="js/config.js"></script>
+  <script src="js/icons.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/scenes/BootScene.js"></script>
+  <script src="js/scenes/MenuScene.js"></script>
+  <script src="js/scenes/GameScene.js"></script>
+  <script src="js/scenes/ResultScene.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
