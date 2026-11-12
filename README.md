@@ -1,5 +1,7 @@
 # 🌱 Sustainable Rush 2.0
 
+🎮 **Play online:** https://Rushabh-28.github.io/sustainable-rush/
+
 An eco-friendly **match-3 puzzle game** that runs in any web browser. Swap tiles, match
 **trees, water, solar, recycling and wind** symbols, and clean up the planet one level at a time.
 
